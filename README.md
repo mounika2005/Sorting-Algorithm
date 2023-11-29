@@ -20,7 +20,21 @@ To write a program to perform selection sort and insertion sort using python pro
 ## Program:
 i)	#Selection Sort
 ```
-
+''' 
+Program to sort the elements in the list using the Selection Sort algorithm.
+Developed by: lakshmi mounika
+RegisterNumber: 23004124
+'''
+def selection_sort(nums):
+    for i in range(len(nums)):
+        low=i
+        for j in range(i+1,len(nums)):
+            if nums[j] < nums[low]:
+                low=j
+        nums[i],nums[low]=nums[low],nums[i]
+list_of_nums = eval(input())
+selection_sort(list_of_nums)
+print(list_of_nums)
 
 
 
@@ -29,7 +43,22 @@ i)	#Selection Sort
 ii)	#Insertion Sort
 ```
 
-
+''' 
+Program to sort the elements in the list using the Insertion Sort algorithm.
+Developed by: lakshmi mounika
+RegisterNumber: 23004124
+'''
+def insertion_sort(nums):
+    for i in range(1,len(nums)):
+        item_to_insert=nums[i]
+        j=i-1
+        while j>=0 and nums[j]>item_to_insert:
+            nums[j+1]=nums[j]
+            j-=1
+        nums[j+1]=item_to_insert
+list_of_nums = eval(input())
+insertion_sort(list_of_nums)
+print(list_of_nums)
 
 
 
@@ -37,6 +66,9 @@ ii)	#Insertion Sort
 ```
 
 ## Output:
+
+![Screenshot 2023-11-29 084551](https://github.com/mounika2005/Sorting-Algorithm/assets/145633112/a8cd69d4-6f57-4926-9190-21052b4d7ddc)
+![Screenshot 2023-11-29 084608](https://github.com/mounika2005/Sorting-Algorithm/assets/145633112/6705f430-01af-4756-9b2f-f67bb505549f)
 
 
 ## Result:
